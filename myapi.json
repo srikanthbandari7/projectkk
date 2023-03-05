@@ -1,0 +1,28 @@
+{
+  "userdata": [
+    {
+      "name": "Srikanth",
+      "email": "sri@gmail.com",
+      "phone": "7981851336",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "sudheer",
+      "email": "sudheer@gmail.com",
+      "phone": 9666131004
+    },
+    {
+      "name": "anushekar",
+      "email": "shekar@gmail.com",
+      "phone": "9494999097",
+      "id": 3
+    },
+    {
+      "name": "Manoj",
+      "email": "manoj@gmail.com",
+      "phone": "9948064988",
+      "id": 4
+    }
+  ]
+}
