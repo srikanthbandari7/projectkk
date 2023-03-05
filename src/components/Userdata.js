@@ -17,7 +17,7 @@ export default function Userdata() {
   }, []);
 
   const searchHandler = () => {
-    axios.get(`${url}/?id=${search}`).then((result) => setData(result.data));
+    axios.get(`${url}/?name=${search}`).then((result) => setData(result.data));
   };
 
   const deleteHandler = (id) => {
@@ -29,12 +29,13 @@ export default function Userdata() {
 
   return (
     <div className="container p-5">
-      <div className="mb-3">
+      <h3 className="text-center">Dvara E-Registry Employee Details</h3>
+      <div className="mb-3 text-center">
         <input
-          className="mx-2"
+          className="mx-2 "
           type="text"
           onChange={(e) => setSearch(e.target.value)}
-          style={{ width: "500px" }}
+          style={{ width: "500px", borderRadius: "6px", padding: "5px" }}
         />
         <button className="btn btn-info" onClick={searchHandler}>
           Search
@@ -55,7 +56,7 @@ export default function Userdata() {
         <tbody>
           {data.map((res, i) => (
             <tr key={i}>
-              <td>{i + 1}</td>
+              <td>{res.id}</td>
               <td>{res.name}</td>
               <td>{res.email}</td>
               <td>{res.phone}</td>
