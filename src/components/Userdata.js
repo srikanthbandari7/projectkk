@@ -36,7 +36,9 @@ export default function Userdata() {
           onChange={(e) => setSearch(e.target.value)}
           style={{ width: "500px" }}
         />
-        <button className="btn btn-info"  onClick={searchHandler} >Search</button>
+        <button className="btn btn-info" onClick={searchHandler}>
+          Search
+        </button>
       </div>
       <table className="table table-bordered p-5 ">
         <thead className="table-dark">
@@ -53,7 +55,7 @@ export default function Userdata() {
         <tbody>
           {data.map((res, i) => (
             <tr key={i}>
-              <td>{i+1}</td>
+              <td>{i + 1}</td>
               <td>{res.name}</td>
               <td>{res.email}</td>
               <td>{res.phone}</td>
