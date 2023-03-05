@@ -16,7 +16,7 @@ export default function Routings(){
     <BrowserRouter>
     <Header/>
     <Routes>
-      <Route path='/userdata' element={<Userdata/>}/>
+      <Route exact path='/userdata' element={<Userdata/>}/>
       <Route path='/Userdata/view/:idno' element={<View/>} />
       <Route path='/Userdata/edit/:idno' element={<Edit/>} />
       <Route path='/signup' element={<Signup/>}  />

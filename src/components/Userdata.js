@@ -21,7 +21,7 @@ export default function Userdata() {
   };
 
   const deleteHandler = (id) => {
-    if (window.confirm(`Delete record no {id}`)) {
+    if (window.confirm(`Delete record no ${id} ?`)) {
       axios.delete(`${url}/${id}`);
       getData();
     }
@@ -53,7 +53,7 @@ export default function Userdata() {
         <tbody>
           {data.map((res, i) => (
             <tr key={i}>
-              <td>{res.id}</td>
+              <td>{i+1}</td>
               <td>{res.name}</td>
               <td>{res.email}</td>
               <td>{res.phone}</td>
