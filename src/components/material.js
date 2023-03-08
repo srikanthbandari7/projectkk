@@ -57,16 +57,12 @@ export default function Material() {
       </TableContainer><br/>
       <TextField id="outlined-basic" label="Enter your name" variant="inlined" /><br/>
       <Button variant="contained">Hello World</Button><br/>
-      <Checkbox
-      checked={checked}
-      onChange={handleChange}
-      inputProps={{ 'aria-label': 'primary checkbox' }}
-    /><br/>
+      
     <Select
       value={value}
       onChange={handleChanges}
       displayEmpty
-      inputProps={{ 'aria-label': 'Without label' }}
+     
     >
       <MenuItem value="">Select an option</MenuItem>
       <MenuItem value="option1">Option 1</MenuItem>
