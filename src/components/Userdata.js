@@ -42,7 +42,7 @@ export default function Userdata() {
         </button>
       </div>
       <table className="table table-bordered p-5 ">
-        <thead className="table-dark">
+        <thead >
           <tr>
             <th>ID</th>
             <th>NAME</th>
@@ -53,10 +53,10 @@ export default function Userdata() {
             </th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="table-dark">
           {data.map((res, i) => (
             <tr key={i}>
-              <td>{res.id}</td>
+              <td>{i + 1}</td>
               <td>{res.name}</td>
               <td>{res.email}</td>
               <td>{res.phone}</td>
