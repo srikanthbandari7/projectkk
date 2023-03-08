@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import {Link} from 'react-router-dom'
 
 export default function Signup(props) {
   const url = `http://localhost:3009/userdata`;
@@ -68,7 +69,8 @@ export default function Signup(props) {
         <div className="mb-3">
           <button type="submit" className="btn btn-success" value="update">
             CREATE ACCOUNT
-          </button>
+          </button>&nbsp;
+          <button  className="btn btn-primary" ><Link  className="text-white" to='/Userdata' style={{textDecoration:'none'}} >GOTO BACK </Link></button>
         </div>
       <p className="text-success">{confirm}</p>
 

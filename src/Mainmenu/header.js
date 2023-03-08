@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom'
 
 export default function Header(){
 
-    const Mainmenu = ['Userdata','Signup']
+    const Mainmenu = ['Userdata','Signup','Material']
 
     return(
         <div>
