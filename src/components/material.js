@@ -14,6 +14,9 @@ import {
   MenuItem
 
 } from "@material-ui/core";
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 
 export default function Material() {
 
@@ -69,6 +72,11 @@ export default function Material() {
       <MenuItem value="option2">Option 2</MenuItem>
       <MenuItem value="option3">Option 3</MenuItem>
     </Select>
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h6">My App</Typography>
+      </Toolbar>
+    </AppBar>
     </div>
   );
 }
